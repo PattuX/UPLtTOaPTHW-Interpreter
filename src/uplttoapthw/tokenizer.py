@@ -10,7 +10,7 @@ class Tokenizer:
         self.re_call_multiple = re.compile("call prisoners ((\w+, )+\w+)\.")
         self.re_squat = re.compile("squat.")
         self.re_shank = re.compile("shank prisoner (\w+)\.")
-        self.re_jump = re.compile("jump to day (\d+)")
+        self.re_jump = re.compile("jump to day (\d+)\.")
         self.re_slap = re.compile("slap prisoner (\w+)\.")
         self.re_eye_contact = re.compile("maintain eye contact with prisoner (\w+) for (\d+) seconds\.")
         self.re_space_or_newline = re.compile("[\n ]")
@@ -22,7 +22,6 @@ class Tokenizer:
             tokens = {}
             data = src.read().lower()
             i = 0
-            curr_day = -1
 
             # check for correct end
             if not re.search("then he world\.\n*$", data):
@@ -98,7 +97,7 @@ class Tokenizer:
                         return
 
                 else:
-                    print("unknown command at char "+str(i))
+                    print("unknown command at char "+str(i)+": "+data[i:i+10]+"...")
                     return
 
 
