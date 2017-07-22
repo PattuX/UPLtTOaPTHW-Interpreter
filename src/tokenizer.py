@@ -7,7 +7,7 @@ class Tokenizer:
     def __init__(self):
         self.re_day = re.compile("day (\d+)")
         self.re_call_single = re.compile("call prisoner (\w+)\.")
-        self.re_call_multiple = re.compile("call prisoners ((\w+, )+\w)\.")
+        self.re_call_multiple = re.compile("call prisoners ((\w+, )+\w+)\.")
         self.re_squat = re.compile("squat.")
         self.re_shank = re.compile("shank prisoner (\w+)\.")
         self.re_jump = re.compile("jump to day (\d+)")

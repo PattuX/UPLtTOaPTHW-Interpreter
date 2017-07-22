@@ -12,3 +12,4 @@ function_name_dict = {
     T_Slap: "slap",
     T_EyeContact: "eye_contact"
 }
+RESPECT_MAX = 255
