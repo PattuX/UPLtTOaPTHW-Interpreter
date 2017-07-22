@@ -1,4 +1,4 @@
-from src.constants import function_name_dict
+from uplttoapthw.constants import function_name_dict
 
 
 class Parser:

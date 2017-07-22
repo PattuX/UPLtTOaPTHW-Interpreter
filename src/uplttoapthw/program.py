@@ -1,5 +1,6 @@
-from src.constants import *
-from src.prisoner import Prisoner
+from uplttoapthw.prisoner import Prisoner
+
+from uplttoapthw.constants import *
 
 
 class Program:

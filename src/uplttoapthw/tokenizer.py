@@ -1,5 +1,5 @@
 import re
-from src.constants import *
+from uplttoapthw.constants import *
 
 
 class Tokenizer:
