@@ -17,11 +17,6 @@ cd src/uplttoapthw
 py main.py '../../test/hello_world.uplttoapthw'
 ```
 
-# Implementations to come
-
-* Control flow (jump/slap)
-* changing language specs (see below)
-
 # New Language Specs?
 
 The language is not made by me which makes me a bit hesitant, but some examples:
