@@ -9,10 +9,17 @@ additions to the esolangs entry:
 * Other function calls (inculding shanking) do not affect the clock, although technically shanking is an arithmetic operation
 * RESPECT_MAX is 255 by default
 
+# Usage
+
+```
+git clone https://github.com/PattuX/UPLtTOaPTHW-Interpreter
+cd src/uplttoapthw
+py main.py '../../test/hello_world.uplttoapthw'
+```
+
 # Implementations to come
 
 * Control flow (jump/slap)
-* running from cmd line
 * changing language specs (see below)
 
 # New Language Specs?
