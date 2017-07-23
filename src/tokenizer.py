@@ -57,12 +57,12 @@ class Tokenizer:
 
                 elif self.re_call_single.match(data, i) is not None:
                     match = self.re_call_single.match(data, i)
-                    tokens[curr_day].append(tuple([T_Call, match.group(1)]))
+                    tokens[curr_day].append(tuple([T_Call, "'"+match.group(1)+"'"]))
                     i += len(match.group())
 
                 elif self.re_call_multiple.match(data, i) is not None:
                     match = self.re_call_multiple.match(data, i)
-                    tokens[curr_day].append(tuple([T_Call, match.group(1)]))
+                    tokens[curr_day].append(tuple([T_Call, "'"+match.group(1).replace(", ", "', '")+"'"]))
                     i += len(match.group())
 
                 elif self.re_squat.match(data, i) is not None:
@@ -72,7 +72,7 @@ class Tokenizer:
 
                 elif self.re_shank.match(data, i) is not None:
                     match = self.re_shank.match(data, i)
-                    tokens[curr_day].append(tuple([T_Shank, match.group(1)]))
+                    tokens[curr_day].append(tuple([T_Shank, "'"+match.group(1)+"'"]))
                     i += len(match.group())
 
                 elif self.re_jump.match(data, i) is not None:
@@ -82,12 +82,12 @@ class Tokenizer:
 
                 elif self.re_slap.match(data, i) is not None:
                     match = self.re_slap.match(data, i)
-                    tokens[curr_day].append(tuple([T_Slap, match.group(1)]))
+                    tokens[curr_day].append(tuple([T_Slap, "'"+match.group(1)+"*"]))
                     i += len(match.group())
 
                 elif self.re_eye_contact.match(data, i) is not None:
                     match = self.re_eye_contact.match(data, i)
-                    tokens[curr_day].append(tuple([T_EyeContact, str(match.group(1))+", "+str(match.group(2))]))
+                    tokens[curr_day].append(tuple([T_EyeContact, "'"+match.group(1)+"', "+match.group(2)]))
                     i += len(match.group())
 
                 elif re.match("then he world\.\n*", data[i:]):
