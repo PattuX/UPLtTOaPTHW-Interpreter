@@ -100,13 +100,3 @@ class Tokenizer:
                 else:
                     print("unknown command at char "+str(i)+": "+data[i:i+10]+"...")
                     return
-
-
-# debug
-def print_tokens(tokens):
-    for day in tokens:
-        cmds = tokens[day]
-        print("Day "+str(day))
-        for cmd in cmds:
-            print("    Command: "+str(cmd[0]))
-            print("        Args: "+str(cmd[1]))
