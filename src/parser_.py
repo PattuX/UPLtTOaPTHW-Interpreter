@@ -1,4 +1,4 @@
-from uplttoapthw.constants import *
+from constants import *
 
 
 class Parser:

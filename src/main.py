@@ -1,7 +1,9 @@
 import argparse
-from uplttoapthw.program import Program
-from uplttoapthw.parser import Parser
-from uplttoapthw.tokenizer import *
+
+from parser_ import Parser
+from program import Program
+
+from tokenizer import *
 
 
 def main():

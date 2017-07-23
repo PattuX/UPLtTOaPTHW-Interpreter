@@ -1,6 +1,8 @@
-from uplttoapthw.prisoner import Prisoner
-from uplttoapthw.constants import *
 import random
+
+from prisoner import Prisoner
+
+from constants import *
 
 
 class Program:
