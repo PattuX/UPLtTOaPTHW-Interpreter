@@ -13,8 +13,8 @@ additions to the esolangs entry:
 
 ```
 git clone https://github.com/PattuX/UPLtTOaPTHW-Interpreter
-cd src/uplttoapthw
-py main.py '../../test/hello_world.uplttoapthw'
+cd UPLtTOaPTHW-Interpreter/src
+py main.py '../test/hello_world.uplttoapthw'
 ```
 
 # New Language Specs?
